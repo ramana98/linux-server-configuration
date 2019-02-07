@@ -1,7 +1,7 @@
 # linux-server-configuration
-. By Venkata Ramana Yenamandra 
-. IP Address 100.26.97.182
-. Url http://100.26.97.182.xip.io/
+1. By Venkata Ramana Yenamandra 
+2. IP Address 100.26.97.182
+3. Url http://100.26.97.182.xip.io/
 
 # Ubuntu Linux Server  instance on amazon EC2:
 1. Create an amazonaws account
@@ -173,3 +173,4 @@ import logging
 2. I could surely say that videos provided in fullstack course have provided me a lot of knowledge in this project.
 3. I used online resources like stack over flow , reddit.com , chatterboxissues.
 4. I can surely say that this project cts as a testimony for my skill set I gained from this course.
+5. I thank udacity for everything.
