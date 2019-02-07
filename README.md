@@ -167,3 +167,9 @@ import logging
 # Run the project
 1. Open your browser
 2. Enter http://100.26.97.182.xip.io
+
+# Resources
+1. I have gained help from many online resources and mentors who encouraged and supported us.
+2. I could surely say that videos provided in fullstack course have provided me a lot of knowledge in this project.
+3. I used online resources like stack over flow , reddit.com , chatterboxissues.
+4. I can surely say that this project cts as a testimony for my skill set I gained from this course.
