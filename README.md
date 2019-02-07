@@ -112,7 +112,7 @@
 
 # ENable new Virtual Host
 1. sudo nano /etc/apache2/sites-available/catalog.conf
-'''<VirtualHost *:80>
+2. '''<VirtualHost *:80>
     ServerName 100.26.97.182.xip.io
     ServerAlias ec2-100-26-97-182.compute-1.amazonaws.com
     ServerAdmin ubuntu@54.210.140.47
@@ -132,5 +132,38 @@
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>'''
+3. save and exit
+4. ENable sudo a2ensite catalog
+5. service apache2 reload
 
+# FLask Application Set up
+1. cd /var/www/catalog/catalog.wsgi
+2. '''import sys
+import logging
+  logging.basicConfig(stream=sys.stderr)
+  sys.path.insert(0, "/var/www/catalog/")
+  from catalog import app as application
+  application.secret_key = 'supersecretkey''''
+3. sudo service apache2 restart
+4. create and activate the virtual environment
+5. . /venv/bin/activate
+6. pip install httplib2
+7. pip install requests
+8. pip install --upgrade oauth2client
+9. pip install sqlalchemy
+10. pip install flask
+11. sudo apt-get install libpq-dev
+12. pip install psycopg2-binary
+13. run database.py file
+14. deactivate the virtual environment
+15. sudo service apache2 reload
+16. sudo service apache2 restart
 
+# Security Updates and package updates
+1. sudo apt-get update
+2. sudo apt-get upgrade
+3. sudo apt-get dist-upgrade
+
+# Run the project
+1. Open your browser
+2. Enter http://100.26.97.182.xip.io
