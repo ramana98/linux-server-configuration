@@ -161,8 +161,7 @@ import logging
 
 # Security Updates and package updates
 1. sudo apt-get update
-2. sudo apt-get upgrade
-3. sudo apt-get dist-upgrade
+2. sudo apt-get dist-upgrade
 
 # Run the project
 1. Open your browser
